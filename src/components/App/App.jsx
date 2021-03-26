@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import GalleryList from '../GalleryList/GalleryList'
 
 function App() {
 
@@ -27,12 +28,11 @@ getGallery();
         </header>
         <p>Gallery goes here</p>
         {/* <p>{JSON.stringify( gallery )}</p> */}
+        <GalleryList 
+        gallery = {gallery}
+        />
         <ul>
-          { gallery.map( ( item , index ) => <li key={item.index}> 
-          <img src={item.path} /> 
-          {item.description}
-          {item.likes} 
-          </li>)}
+
         </ul>
 
       </div>
