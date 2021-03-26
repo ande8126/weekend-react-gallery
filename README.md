@@ -4,7 +4,7 @@ This is an ongoing React project I'm working on as one of the weekend challenges
 
 ## Description
 
-My Life uses full-stack tech to allow users to interact with a gallery of photos and events from my life. Elements are submitted on the DOM, sent through the server to a database, and then called back from the database to be displayed.
+My Life uses full-stack tech to allow users to interact with a gallery of photos and events from my life. Elements are submitted on the DOM, sent through to the server, and then called back to be displayed.
 
 ## Tech
 
