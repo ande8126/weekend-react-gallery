@@ -8,6 +8,10 @@ function App() {
 
 const [ gallery, setGallery ] = useState( [] );
 
+useEffect( ()=>{
+  getGallery();
+}, [])
+
 let getGallery = () =>{
   console.log( 'in getGallery' );
   axios.get( '/gallery' ).then( (response)=>{
@@ -19,8 +23,6 @@ let getGallery = () =>{
   })
 }
 
-getGallery();
-
     return (
       <div className="App">
         <header className="App-header">
@@ -28,13 +30,7 @@ getGallery();
         </header>
         <p>Gallery goes here</p>
         {/* <p>{JSON.stringify( gallery )}</p> */}
-        <GalleryList 
-        gallery = {gallery}
-        />
-        <ul>
-
-        </ul>
-
+        <GalleryList gallery = {gallery}/>
       </div>
     );
 }
