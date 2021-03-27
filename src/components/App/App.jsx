@@ -23,6 +23,8 @@ let getGallery = () =>{
   })
 }
 
+
+
     return (
       <div className="App">
         <header className="App-header">
@@ -30,7 +32,9 @@ let getGallery = () =>{
         </header>
         <p>Gallery goes here</p>
         {/* <p>{JSON.stringify( gallery )}</p> */}
-        <GalleryList gallery = {gallery}/>
+        <GalleryList 
+        gallery = {gallery}
+        getGallery = {getGallery}/>
       </div>
     );
 }

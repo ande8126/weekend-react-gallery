@@ -27,13 +27,15 @@ let displayDescription = () =>{
 
 //make funciton to increase like count by one
 let sendLike = () =>{
-    console.log( 'in sendLike' );
-    axios.put( 'gallery/like/:id' ).then( (response)=>{
+    let id = props.item.id;
+    console.log( 'in sendLike', id );
+    axios.put( 'gallery/like/' + id ).then( (response)=>{
         console.log( 'back from PUT' );
     }).catch( (err)=>{
         console.log( 'error in PUT', err );
         alert( 'error in PUT', err );
     })
+    props.getGallery();
 }
 //make PUT route
 
