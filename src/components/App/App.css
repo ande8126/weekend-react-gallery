@@ -14,6 +14,18 @@
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 80%;
+  height: 80%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+li{
+  display: block;
+  width: 175px;
+  height: 175px;
 }

@@ -42,7 +42,7 @@ These were provided by Prime at the start of the assignment
 [ ] Use git branching (for each `feature` of your application, make a branch, work on the branch, and then merge it into master with `git merge --no-ff`. Feel free to work on the features in any order you like. You should be making branches for whatever feature you are working on.)
 
 
-[ ] Move the data into a database (postgresql)
+[x] Move the data into a database (postgresql)
     - name your database `react_gallery`
     - include a `database.sql` file documenting your database tables
 [ ] Add a form (new **component**) that allows a user to POST a new gallery item

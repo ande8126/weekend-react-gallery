@@ -25,19 +25,21 @@ let displayDescription = () =>{
 }//end displayDescription
 
 
-//make funciton to increase like count by one
+//make function to increase like count by one
 let sendLike = () =>{
     let id = props.item.id;
     console.log( 'in sendLike', id );
+    //make PUT call
     axios.put( 'gallery/like/' + id ).then( (response)=>{
         console.log( 'back from PUT' );
     }).catch( (err)=>{
         console.log( 'error in PUT', err );
         alert( 'error in PUT', err );
     })
+    //refresh page after PUT call
     props.getGallery();
 }
-//make PUT route
+
 
 
     return(
@@ -45,8 +47,8 @@ let sendLike = () =>{
         {/* make li show discription onClick */}
             <li onClick={toggleDescription}> 
             {displayDescription()}
-            </li>
             <button onClick={sendLike}> Like! [{props.item.likes}]</button>
+            </li>
         </>
     )
 }
