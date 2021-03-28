@@ -39,6 +39,14 @@ router.get('/', (req, res) => {
 //POST route to take in new gallery additions (stretch)
 router.post( '/', ( req, res )=>{
     console.log( 'in the POST:', req.body );
+    queryText = `INSERT INTO "gallery" ( "path", "description" ) VALUES ($1, $2);`;
+    pool.query( queryText, [ req.body.path, req.body.description ])
+    .then( (results )=>{
+        res.sendStatus( 200 );
+    }).catch( (err)=>{
+        console.log( err );
+        res.sendStatus( 500 );
+    })
 })
 
 
