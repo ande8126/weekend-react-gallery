@@ -43,10 +43,8 @@ function GalleryForm( props ){
     }
 
 
-
-
     return(
-        <>
+        <section className="form">
             {/* input needed for img link */}
             <label>Photo:</label>
             <input onChange={ handlePhoto } type="text" placeholder="http://photourl.com/example"></input>
@@ -55,7 +53,7 @@ function GalleryForm( props ){
             <input onChange={ handleDescription } type="text" placeholder="Short description here"></input>
             {/* button needed to submit */}
             <button onClick={ addToGallery }>Add</button>
-        </>
+        </section>
     )
 
 }

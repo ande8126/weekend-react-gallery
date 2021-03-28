@@ -42,12 +42,16 @@ let sendLike = () =>{
 
     return(
         <>   
-        {/* make li show discription onClick */}
-            <li className="imgBox" onClick={toggleDescription}>
-                {displayDescription()}
-            </li>
-            <li>
-                <button onClick={sendLike}> Like! [{props.item.likes}]</button>
+            <li> 
+                <ul className="galleryBox">
+                    {/* make li show discription onClick */}
+                    <li className="imgBox" onClick={toggleDescription}>
+                        {displayDescription()}
+                    </li>
+                    <li>
+                        <button onClick={sendLike}> Like! [{props.item.likes}]</button>
+                    </li>
+                </ul>
             </li>
         </>
     )
