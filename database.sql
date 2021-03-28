@@ -2,8 +2,9 @@ CREATE TABLE gallery (
     id SERIAL PRIMARY KEY,
     path varchar(255),
     description varchar(255),
-    likes varchar (4) DEFAULT 0
+    likes int DEFAULT 0
 );
+
 INSERT INTO gallery ("path", "description", "likes") 
 VALUES 
 ( 'images/gazebo.jpg', 'Gazebo structure in the gardens of Versailles Palace.', 0),
