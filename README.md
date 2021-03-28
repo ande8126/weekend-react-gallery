@@ -39,7 +39,7 @@ These were provided by Prime at the start of the assignment
 
 ## Stretch goals checklist
 
-[ ] Use git branching (for each `feature` of your application, make a branch, work on the branch, and then merge it into master with `git merge --no-ff`. Feel free to work on the features in any order you like. You should be making branches for whatever feature you are working on.)
+[x] Use git branching (for each `feature` of your application, make a branch, work on the branch, and then merge it into master with `git merge --no-ff`. Feel free to work on the features in any order you like. You should be making branches for whatever feature you are working on.)
 
 
 [x] Move the data into a database (postgresql)
