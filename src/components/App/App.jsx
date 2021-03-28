@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import GalleryList from '../GalleryList/GalleryList'
+import GalleryForm from '../GalleryForm/GalleryForm'
 
 function App() {
 
@@ -30,11 +31,16 @@ let getGallery = () =>{
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
+        <GalleryForm 
+        gallery = {gallery}
+        getGallery = {getGallery}
+        />
+        <p>Gallery</p>
         {/* <p>{JSON.stringify( gallery )}</p> */}
         <GalleryList 
         gallery = {gallery}
-        getGallery = {getGallery}/>
+        getGallery = {getGallery}
+        />
       </div>
     );
 }

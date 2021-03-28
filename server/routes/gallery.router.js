@@ -36,4 +36,12 @@ router.get('/', (req, res) => {
     /////REMOVED FOR STRETCH GOALS res.send(galleryItems);
 }); // END GET Route
 
+//POST route to take in new gallery additions (stretch)
+router.post( '/', ( req, res )=>{
+    console.log( 'in the POST:', req.body );
+})
+
+
+
+
 module.exports = router;
