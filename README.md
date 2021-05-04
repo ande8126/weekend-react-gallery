@@ -1,6 +1,6 @@
-# Gallery of My life (React)
+# Gallery of My Life - learning React
 
-This is an ongoing React project I'm working on as one of the weekend challenges for Prime Digital Academy
+This was my first real foray into using React. Originally coded as an assignment for Prime Digital Academy, this Gallery uses simple server and db routes to allow users to post, like and delete photos.
 
 ## Description
 
